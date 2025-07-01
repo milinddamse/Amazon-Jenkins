@@ -35,7 +35,7 @@ pipeline {
   failure{
        echo 'Failure in the build'
    }
-  Always{
+  always{
        echo 'Great job done'
    }
   }
