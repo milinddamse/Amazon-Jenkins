@@ -22,12 +22,7 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('build') {
-            steps {
-                 sh 'mvn clean install'
-            }
-        }
-
+       
         
     }
 
@@ -40,7 +35,9 @@ pipeline {
   failure{
        echo 'Failure in the build'
    }
-
+  Always{
+       echo 'Great job done'
+   }
   }
 
 
