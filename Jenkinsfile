@@ -2,7 +2,7 @@ pipeline {
     agent { label 'windows' }
    
     tools {
-        maven 'Maven3.9.0' // Name from Global Tool Configuration
+        maven "Maven3.9.0" 
     }
 
     environment {
