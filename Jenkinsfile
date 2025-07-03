@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent windows-milind
     environment {
         // Use PATH+EXTRA to append to PATH properly
         PATH = "/usr/bin:/bin:/opt/homebrew/bin"
