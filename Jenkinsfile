@@ -1,9 +1,8 @@
 pipeline {
     agent { label 'windows' }
-
-    
+   
     tools {
-        maven 'Maven3.9.10' // Name from Global Tool Configuration
+        maven 'Maven3.9.0' // Name from Global Tool Configuration
     }
 
     environment {
@@ -14,18 +13,18 @@ pipeline {
 
         stage('pull scm') {
             steps {
-                git branch: 'main', url: 'https://github.com/milinddamse/Amazon-Jenkins.git'
+                git branch: 'nodetest', url: 'https://github.com/milinddamse/Amazon-Jenkins.git'
             }
         }
         stage('compile') {
             steps {
-                bat 'mvn compile'
+                sh 'mvn compile'
             }
         }
 
         stage('build') {
             steps {
-                 bat 'mvn clean install'
+                 sh 'mvn clean install'
             }
         }
 
