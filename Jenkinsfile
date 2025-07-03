@@ -1,9 +1,7 @@
 pipeline {
     agent { label 'windows' }
    
-    tools {
-        maven "Maven3.9.0" 
-    }
+    tools {maven "Maven3.9.0"}
 
     environment {
         // Use PATH+EXTRA to append to PATH properly
