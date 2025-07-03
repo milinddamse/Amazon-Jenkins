@@ -4,7 +4,7 @@ pipeline {
     
     tools {
         maven 'Maven3.9.10' // Name from Global Tool Configuration
-         }
+    }
 
     environment {
         // Use PATH+EXTRA to append to PATH properly
